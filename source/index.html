@@ -9,11 +9,11 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="191" height="39" alt="Логотип «Кэт энерджи»">
+    <a class="page-header__logo logo">
+      <img src="#" width="191" height="39" alt="Логотип «Кэт энерджи»">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a>Главная</a>
@@ -30,10 +30,8 @@
 
   <main class="page-main">
 
-    <h1 class="visually-hidden">Главная страница интернет-магазина «Кэт энерджи»</h1>
-
     <section class="promo-block">
-      <p class="promo-block__intro">Функциональное питание для котов</p>
+      <h2 class="promo-block__intro">Функциональное питание для котов</h2>
       <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
       <img class="promo-block__image" src="#" width="280" height="270" alt="Корм «Кэт энерджи»">
       <a class="promo-block__button button" href="form.html">Подобрать программу</a>
@@ -79,8 +77,8 @@
 
   <footer class="page-footer">
 
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="#" width="128" height="24" alt="Логотип «Кэт энерджи»">
+    <a class="page-footer__logo logo">
+      <img src="#" width="128" height="24" alt="Логотип «Кэт энерджи»">
     </a>
 
     <div class="page-footer__social social">
@@ -100,7 +98,7 @@
     <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработано:</h2>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип «HTML Academy»">
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" width="27" height="34" alt="Логотип «HTML Academy»"></a>
     </div>
 
   </footer>
