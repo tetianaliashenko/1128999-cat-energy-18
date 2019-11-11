@@ -32,6 +32,58 @@
 
     <h1 class="page-main__title">Подбор программы</h1>
 
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+
+      <p class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+      <fieldset class="form__pets-info">
+        <legend class="visually-hidden">Информация о коте</legend>
+        <label class="form__label" for="pets-info-1">Имя:*</label><input class="form__input" type="text" value="Барсик"
+          id="pets-info-1" name="pets-name" required>
+        <label class="form__label" for="pets-info-2">Вес (кг):*</label><input class="form__input" type="text" value="7"
+          id="pets-info-2" name="pets-weight" required>
+        <label class="form__label" for="pets-info-3">Возраст (лет):</label><input class="form__input" type="text"
+          value="7" id="pets-info-3" name="pets-age">
+      </fieldset>
+
+      <fieldset class="form__target-info">
+        <legend class="visually-hidden">Ваша цель</legend>
+        <input type="radio" id="target-info-1" name="target-info" checked><label
+          class="form__label form__label--right" for="target-info-1">Похудение</label>
+        <input type="radio" id="target-info-2" name="target-info"><label class="form__label form__label--right"
+          for="target-info-2">Набор массы</label>
+        <input type="radio" id="target-info-3" name="target-info"><label class="form__label form__label--right"
+          for="target-info-3">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+
+      <fieldset class="form__owner-info">
+        <legend class="page-main__title">Контактные данные (владельца кота)</legend>
+        <label class="form__label" for="owner-info-1">E-mail:*</label><input class="form__input form__input--email"
+          type="email" value="kuklachev@gmail.com" id="pets-info-1" name="owner-email" required>
+        <label class="form__label" for="owner-info-2">Телефон:*</label><input class="form__input form__input--phone"
+          type="tel" value="8 (960) 900-60-90" id="pets-info-2" name="owner-phone" required>
+      </fieldset>
+
+      <fieldset class="form__comments">
+        <legend class="page-main__title">Комментарий</legend>
+        <textarea class="form__textarea" name="comments">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+
+      <fieldset class="form__additional-info">
+        <legend class="page-main__title">Дополнительно</legend>
+        <input type="checkbox" id="additional-info-1" name="additional-info-1" checked><label
+          class="form__label form__label--right" for="additional-info-1">Сахарозаменитель</label>
+        <input type="checkbox" id="additional-info-2" name="additional-info-2"><label
+          class="form__label form__label--right" for="additional-info-2">Питьевая вода</label>
+        <input type="checkbox" id="additional-info-3" name="additional-info-3"><label
+          class="form__label form__label--right" for="additional-info-3">Молоко</label>
+        <input type="checkbox" id="additional-info-4" name="additional-info-4"><label
+          class="form__label form__label--right" for="additional-info-4">Витамины</label>
+      </fieldset>
+
+      <button class="form__button button" type="submit">Отправить заявку</button>
+      <small class="form__required">* — Обязательные поля</small>
+    </form>
   </main>
 
   <footer class="page-footer">
@@ -64,11 +116,10 @@
     <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработано:</h2>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" width="27" height="34" alt="Логотип «HTML Academy»"></a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" width="27" height="34"
+          alt="Логотип «HTML Academy»"></a>
     </div>
-
   </footer>
-
 </body>
 
 </html>
