@@ -30,55 +30,53 @@
 
   <main class="page-main">
 
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__heading">Подбор программы</h1>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
 
       <p class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-      <fieldset class="form__pets-info">
-        <legend class="visually-hidden">Информация о коте</legend>
-        <label class="form__label" for="pets-info-1">Имя:*</label><input class="form__input" type="text" value="Барсик"
-          id="pets-info-1" name="pets-name" required>
-        <label class="form__label" for="pets-info-2">Вес (кг):*</label><input class="form__input" type="text" value="7"
-          id="pets-info-2" name="pets-weight" required>
-        <label class="form__label" for="pets-info-3">Возраст (лет):</label><input class="form__input" type="text"
-          value="7" id="pets-info-3" name="pets-age">
+      <fieldset class="form__block">
+        <label class="form__label" for="name">Имя:*</label><input class="form__input" type="text" placeholder="Барсик"
+          id="name" name="pets-name" required>
+        <label class="form__label" for="weight">Вес (кг):*</label><input class="form__input" type="text" placeholder="7"
+          id="weight" name="pets-weight" required>
+        <label class="form__label" for="age">Возраст (лет):</label><input class="form__input" type="text"
+        placeholder="7" id="age" name="pets-age">
       </fieldset>
 
-      <fieldset class="form__target-info">
-        <legend class="visually-hidden">Ваша цель</legend>
-        <input type="radio" id="target-info-1" name="target-info" checked><label
-          class="form__label form__label--right" for="target-info-1">Похудение</label>
-        <input type="radio" id="target-info-2" name="target-info"><label class="form__label form__label--right"
-          for="target-info-2">Набор массы</label>
-        <input type="radio" id="target-info-3" name="target-info"><label class="form__label form__label--right"
-          for="target-info-3">Не знаю (Нужен ваш совет)</label>
+      <fieldset class="form__block">
+        <input type="radio" id="target-thin" name="target-info" checked><label
+          class="form__label form__label--right" for="target-thin">Похудение</label>
+        <input type="radio" id="target-mass" name="target-info"><label class="form__label form__label--right"
+          for="target-mass">Набор массы</label>
+        <input type="radio" id="target-unknown" name="target-info"><label class="form__label form__label--right"
+          for="target-unknown">Не знаю (Нужен ваш совет)</label>
       </fieldset>
 
-      <fieldset class="form__owner-info">
+      <fieldset class="form__block">
         <legend class="page-main__title">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="owner-info-1">E-mail:*</label><input class="form__input form__input--email"
-          type="email" value="kuklachev@gmail.com" id="pets-info-1" name="owner-email" required>
-        <label class="form__label" for="owner-info-2">Телефон:*</label><input class="form__input form__input--phone"
-          type="tel" value="8 (960) 900-60-90" id="pets-info-2" name="owner-phone" required>
+        <label class="form__label" for="email">E-mail:*</label><input class="form__input form__input--email"
+          type="email" placeholder="kuklachev@gmail.com" id="email" name="owner-email" required>
+        <label class="form__label" for="phone">Телефон:*</label><input class="form__input form__input--phone"
+          type="tel" placeholder="8 (960) 900-60-90" id="phone" name="owner-phone" required>
       </fieldset>
 
-      <fieldset class="form__comments">
+      <fieldset class="form__block">
         <legend class="page-main__title">Комментарий</legend>
-        <textarea class="form__textarea" name="comments">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__additional-info">
+      <fieldset class="form__block">
         <legend class="page-main__title">Дополнительно</legend>
-        <input type="checkbox" id="additional-info-1" name="additional-info-1" checked><label
-          class="form__label form__label--right" for="additional-info-1">Сахарозаменитель</label>
-        <input type="checkbox" id="additional-info-2" name="additional-info-2"><label
-          class="form__label form__label--right" for="additional-info-2">Питьевая вода</label>
-        <input type="checkbox" id="additional-info-3" name="additional-info-3"><label
-          class="form__label form__label--right" for="additional-info-3">Молоко</label>
-        <input type="checkbox" id="additional-info-4" name="additional-info-4"><label
-          class="form__label form__label--right" for="additional-info-4">Витамины</label>
+        <input type="checkbox" id="notsugar" name="notsugar" checked><label
+          class="form__label form__label--right" for="notsugar">Сахарозаменитель</label>
+        <input type="checkbox" id="water" name="water"><label
+          class="form__label form__label--right" for="water">Питьевая вода</label>
+        <input type="checkbox" id="milk" name="milk"><label
+          class="form__label form__label--right" for="milk">Молоко</label>
+        <input type="checkbox" id="vitamins" name="vitamins"><label
+          class="form__label form__label--right" for="vitamins">Витамины</label>
       </fieldset>
 
       <button class="form__button button" type="submit">Отправить заявку</button>
