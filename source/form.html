@@ -36,47 +36,49 @@
 
       <p class="form__info">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
-      <fieldset class="form__element">
-        <label class="form__label" for="name">Имя:*</label><input class="form__input" type="text" placeholder="Барсик"
-          id="name" name="pets-name" required>
-        <label class="form__label" for="weight">Вес (кг):*</label><input class="form__input" type="text" placeholder="7"
-          id="weight" name="pets-weight" required>
-        <label class="form__label" for="age">Возраст (лет):</label><input class="form__input" type="text"
-          placeholder="7" id="age" name="pets-age">
+      <fieldset class="form__fieldset">
+        <label class="form__label" for="name">Имя:*</label>
+        <input class="form__input" type="text" placeholder="Барсик" id="name" name="pets-name" required>
+        <label class="form__label" for="weight">Вес (кг):*</label>
+        <input class="form__input" type="text" placeholder="7" id="weight" name="pets-weight" required>
+        <label class="form__label" for="age">Возраст (лет):</label>
+        <input class="form__input" type="text" placeholder="7" id="age" name="pets-age">
       </fieldset>
 
-      <fieldset class="form__element">
-        <input type="radio" id="target-thin" name="target-info" checked><label class="form__label form__label--right"
-          for="target-thin">Похудение</label>
-        <input type="radio" id="target-mass" name="target-info"><label class="form__label form__label--right"
-          for="target-mass">Набор массы</label>
-        <input type="radio" id="target-unknown" name="target-info"><label class="form__label form__label--right"
-          for="target-unknown">Не знаю (Нужен ваш совет)</label>
+      <fieldset class="form__fieldset">
+        <input type="radio" id="target-thin" name="target-info" checked>
+        <label class="form__label form__label--right" for="target-thin">Похудение</label>
+        <input type="radio" id="target-mass" name="target-info">
+        <label class="form__label form__label--right" for="target-mass">Набор массы</label>
+        <input type="radio" id="target-unknown" name="target-info">
+        <label class="form__label form__label--right" for="target-unknown">Не знаю (Нужен ваш совет)</label>
       </fieldset>
 
-      <fieldset class="form__element">
+      <fieldset class="form__fieldset">
         <legend class="page-main__title">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="email">E-mail:*</label><input class="form__input form__input--email"
-          type="email" placeholder="kuklachev@gmail.com" id="email" name="owner-email" required>
-        <label class="form__label" for="phone">Телефон:*</label><input class="form__input form__input--phone" type="tel"
-          placeholder="8 (960) 900-60-90" id="phone" name="owner-phone" required>
+        <label class="form__label" for="email">E-mail:*</label>
+        <input class="form__input form__input--email" type="email" placeholder="kuklachev@gmail.com" id="email"
+          name="owner-email" required>
+        <label class="form__label" for="phone">Телефон:*</label>
+        <input class="form__input form__input--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone"
+          name="owner-phone" required>
       </fieldset>
 
-      <fieldset class="form__element">
+      <fieldset class="form__fieldset">
         <legend class="page-main__title">Комментарий</legend>
         <textarea class="form__textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__element">
+      <fieldset class="form__fieldset">
         <legend class="page-main__title">Дополнительно</legend>
-        <input type="checkbox" id="notsugar" name="notsugar" checked><label class="form__label form__label--right"
-          for="notsugar">Сахарозаменитель</label>
-        <input type="checkbox" id="water" name="water"><label class="form__label form__label--right"
-          for="water">Питьевая вода</label>
-        <input type="checkbox" id="milk" name="milk"><label class="form__label form__label--right"
-          for="milk">Молоко</label>
-        <input type="checkbox" id="vitamins" name="vitamins"><label class="form__label form__label--right"
-          for="vitamins">Витамины</label>
+        <input type="checkbox" id="notsugar" name="notsugar" checked>
+        <label class="form__label form__label--right" for="notsugar">Сахарозаменитель</label>
+        <input type="checkbox" id="water" name="water">
+        <label class="form__label form__label--right" for="water">Питьевая вода</label>
+        <input type="checkbox" id="milk" name="milk">
+        <label class="form__label form__label--right" for="milk">Молоко</label>
+        <input type="checkbox" id="vitamins" name="vitamins">
+        <label class="form__label form__label--right" for="vitamins">Витамины</label>
       </fieldset>
 
       <button class="form__button button" type="submit">Отправить заявку</button>
@@ -114,8 +116,9 @@
     <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработано:</h2>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" width="27" height="34"
-          alt="Логотип «HTML Academy»"></a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="#" width="27" height="34" alt="Логотип «HTML Academy»">
+      </a>
     </div>
   </footer>
 </body>
