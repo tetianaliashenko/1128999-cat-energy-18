@@ -1,8 +1,22 @@
-.font(@fontName; @urlName: @fontName; @weight: 400; @style: normal) {
+.font(@fontName; @urlName; @weight: 400; @style: normal) {
   font-family: "@{fontName}";
   src: url("../fonts/@{urlName}.woff2") format("woff2"),
        url("../fonts/@{urlName}.woff") format("woff");
   font-weight: @weight;
   font-style: @style;
 }
+
+.font-apply(@font-weight: 400; @font-style: normal; @font-family: "Oswald"; @text-align: left) {
+  font-weight:  @font-weight;
+  font-style: @font-style;
+  font-family: @font-family, sans-serif;
+  text-align: @text-align;
+}
+
+.list-style() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 
