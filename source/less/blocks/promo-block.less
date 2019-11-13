@@ -1,8 +1,20 @@
 .promo-block {
-  background-color: #64a83b;
+  .font-apply(@text-align: center);
+  color: @white;
 
+  background-color: @leaf;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.promo-block__intro {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo-block__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
