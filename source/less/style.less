@@ -1,52 +1,16 @@
-@font-face {
-  .font(@fontRegular; @urlName: oswaldregular);
-}
-
-@font-face {
-  .font(@fontMedium; @urlName: oswaldmedium; @weight: 500);
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-body {
-  margin: 0;
-
-  background-color: #ffffff;
-}
-
-@import "blocks/advantages.less";
 @import "variables.less";
 @import "mixins.less";
-@import "node_modules/normalize.less/normalize.less";
+@import "global-styles.less";
+@import "../../node_modules/normalize.less/normalize.less";
+@import "blocks/advantages.less";
+@import "blocks/all-products.less";
 @import "blocks/button.less";
+@import "blocks/catalog-additional.less";
+@import "blocks/catalog-main.less";
 @import "blocks/contacts.less";
 @import "blocks/copyright.less";
+@import "blocks/example.less";
+@import "blocks/form.less";
 @import "blocks/gift-promo.less";
 @import "blocks/main-nav.less";
 @import "blocks/page-footer.less";
@@ -56,8 +20,3 @@ body {
 @import "blocks/products.less";
 @import "blocks/promo-block.less";
 @import "blocks/social.less";
-
-
-
-
-

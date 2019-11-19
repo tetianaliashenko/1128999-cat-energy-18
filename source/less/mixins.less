@@ -1,15 +1,15 @@
 .font(@fontName; @urlName; @weight: 400; @style: normal) {
   font-family: "@{fontName}";
   src: url("../fonts/@{urlName}.woff2") format("woff2"),
-       url("../fonts/@{urlName}.woff") format("woff");
+    url("../fonts/@{urlName}.woff") format("woff");
   font-weight: @weight;
   font-style: @style;
 }
 
 .font-apply(@font-weight: 400; @font-style: normal; @font-family: "Oswald"; @text-align: left) {
-  font-weight:  @font-weight;
+  font-weight: @font-weight;
   font-style: @font-style;
-  font-family: @font-family, sans-serif;
+  font-family: @font-family, "Arial", sans-serif;
   text-align: @text-align;
 }
 
@@ -18,8 +18,3 @@
   margin: 0;
   padding: 0;
 }
-
-.border(@side; @color: @pinkish-grey) {
-  border-@{side}: 1px solid @pinkish-grey;
-}
-

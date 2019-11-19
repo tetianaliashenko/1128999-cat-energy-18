@@ -6,10 +6,10 @@
 .form__info {
   margin-bottom: 39px;
 
-  .font-apply;
+  .font-apply();
   font-size: 14px;
   line-height: 18px;
-  color: @black-three;
+  color: @black;
 }
 
 .form__fieldset {
@@ -21,7 +21,7 @@
 }
 
 .form__fieldset--border {
-  .border(@color: @two-grey);
+  border: 1px solid @products-grey;
 }
 
 .form__label {
@@ -29,10 +29,10 @@
   padding-top: 15px;
   padding-bottom: 12px;
 
-  .font-apply;
+  .font-apply();
   font-size: 16px;
   line-height: 18px;
-  color: @black-two;
+  color: @darker-black;
 }
 
 .form__label--right {
@@ -42,19 +42,17 @@
 .form_title {
   margin-bottom: 31px;
 
-  .font-apply;
+  .font-apply();
   font-size: 24px;
   line-height: 24px;
-  color: @black-three;
+  color: @black;
 }
 
 .form__input {
   margin-bottom: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
+  padding: 15px 0 15px 16px;
 
-  .font-apply;
+  .font-apply();
   font-size: 16px;
   line-height: 18px;
   color: @greyish-brown;
