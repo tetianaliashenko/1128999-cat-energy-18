@@ -10,14 +10,15 @@
   font-size: 14px;
   line-height: 18px;
   color: @black;
+
+  text-transform: uppercase;
 }
 
 .form__fieldset {
-  padding-top: 31px;
-}
+  margin-bottom: 31px;
+  padding: 0;
 
-.form__fieldset:last-of-type {
-  margin-bottom: 34px;
+  border: none;
 }
 
 .form__fieldset--border {
@@ -33,13 +34,15 @@
   font-size: 16px;
   line-height: 18px;
   color: @darker-black;
+
+  text-transform: uppercase;
 }
 
 .form__label--right {
   padding-left: 46px;
 }
 
-.form_title {
+.form__title {
   margin-bottom: 31px;
 
   .font-apply();
@@ -50,20 +53,41 @@
 
 .form__input {
   margin-bottom: 14px;
-  padding: 15px 0 15px 16px;
+  padding: 15px 15px 15px 16px;
 
   .font-apply();
   font-size: 16px;
   line-height: 18px;
   color: @greyish-brown;
+
+  text-transform: uppercase;
+
+  border: 1px solid @pinkish-grey;
 }
 
 .form__input:last-of-type {
   margin-bottom: 0;
 }
 
+.form__textarea {
+  padding: 15px 15px 15px 16px;
+
+  .font-apply();
+  font-size: 16px;
+  line-height: 18px;
+  color: @greyish-brown;
+
+  text-transform: uppercase;
+
+  border: 1px solid @pinkish-grey;
+
+  resize: none;
+}
+
 .form__button {
   margin-bottom: 23px;
+
+  border: none;
 }
 
 .form__required {
@@ -72,6 +96,3 @@
   line-height: 16px;
   color: @greyish-brown;
 }
-
-
-

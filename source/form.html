@@ -70,18 +70,22 @@
 
       <fieldset class="form__fieldset">
         <legend class="form__title">Комментарий</legend>
-        <textarea class="form__textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__textarea" rows="7" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__fieldset">
         <legend class="form__title">Дополнительно</legend>
-        <input type="checkbox" id="notsugar" name="notsugar" checked>
+        <input class="visually-hidden" type="checkbox" id="notsugar" name="notsugar" checked>
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="notsugar">Сахарозаменитель</label>
-        <input type="checkbox" id="water" name="water">
+        <input class="visually-hidden" type="checkbox" id="water" name="water">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="water">Питьевая вода</label>
-        <input type="checkbox" id="milk" name="milk">
+        <input class="visually-hidden" type="checkbox" id="milk" name="milk">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="milk">Молоко</label>
-        <input type="checkbox" id="vitamins" name="vitamins">
+        <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="vitamins">Витамины</label>
       </fieldset>
 
