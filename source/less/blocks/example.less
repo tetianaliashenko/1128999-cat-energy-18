@@ -1,27 +1,20 @@
-.example {
-  padding-top: 33px;
-  padding-bottom: 38px;
-}
-
 .example__wrapper {
   background-color: @grey;
 }
 
 .example__title {
+  margin: 0;
   margin-bottom: 33px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: 33px;
 
   .font-apply();
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
   color: @black;
 }
 
 .example__info {
   margin-bottom: 27px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   .font-apply(@font-family: "Arial");
   font-size: 14px;
@@ -31,8 +24,6 @@
 
 .example__element {
   margin-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .example__amount {
@@ -42,6 +33,8 @@
   font-size: 24px;
   line-height: 24px;
   color: @black;
+
+  text-transform: uppercase;
 }
 
 .example__action {
@@ -54,14 +47,34 @@
 }
 
 .example__costs {
+  margin: 0;
   margin-bottom: 44px;
 
   .font-apply(@text-align: center);
   font-size: 14px;
   line-height: 20px;
   color: @black;
+
+  text-transform: uppercase;
 }
 
 .example__image {
   margin-bottom: 35px;
+}
+
+.example__toggles {
+  padding-bottom: 38px;
+}
+
+.example__toggle {
+  .font-apply();
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+
+  text-transform: uppercase;
+}
+
+.example__toggle--left {
+  margin-right: 121px;
 }
