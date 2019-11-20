@@ -1,6 +1,5 @@
 .form {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px 34px 20px;
 }
 
 .form__info {
@@ -19,10 +18,13 @@
   padding: 0;
 
   border: none;
-}
 
-.form__fieldset--border {
-  border: 1px solid @products-grey;
+  &--border {
+    padding-right: -20px;
+    padding-left: -20px;
+
+    border: 1px solid @products-grey;
+  }
 }
 
 .form__label {
@@ -36,10 +38,10 @@
   color: @darker-black;
 
   text-transform: uppercase;
-}
 
-.form__label--right {
-  padding-left: 46px;
+  &--right {
+    padding-left: 46px;
+  }
 }
 
 .form__title {
@@ -63,10 +65,10 @@
   text-transform: uppercase;
 
   border: 1px solid @pinkish-grey;
-}
 
-.form__input:last-of-type {
-  margin-bottom: 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .form__textarea {
