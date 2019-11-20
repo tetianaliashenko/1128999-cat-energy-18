@@ -100,10 +100,12 @@
         <div class="example__visual">
           <img class="example__image" src="#" width="311" height="232" alt="Кот Борис">
           <div class="example__toggles">
-            <label class="example__toggle example__toggle--left"><input type="radio"
-                class="visually-hidden">Было</label>
-            <label class="example__toggle example__toggle--right"><input type="radio"
-                class="visually-hidden">Стало</label>
+            <input class="visually-hidden" type="radio" id="previous" name="previous">
+            <span class="example__radio-previous"></span>
+            <label class="example__toggle example__toggle--left" for="previous">Было</label>
+            <input class="visually-hidden" type="radio" id="current" name="current">
+            <span class="example__radio-current"></span>
+            <label class="example__toggle example__toggle--right" for="current">Стало</label>
           </div>
         </div>
       </div>
@@ -114,7 +116,7 @@
   <footer class="page-footer">
 
     <section class="page-footer__contacts contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper contacts__wrapper--white">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

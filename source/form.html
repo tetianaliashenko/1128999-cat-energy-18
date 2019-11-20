@@ -46,7 +46,7 @@
         <input class="form__input" type="text" placeholder="7" id="age" name="pets-age">
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--border">
         <input class="visually-hidden" type="radio" id="target-thin" name="target-info" checked>
         <span class="form__radio-button"></span>
         <label class="form__label form__label--right" for="target-thin">Похудение</label>
@@ -70,18 +70,23 @@
 
       <fieldset class="form__fieldset">
         <legend class="form__title">Комментарий</legend>
-        <textarea class="form__textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__textarea" rows="7" name="comments"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__fieldset">
         <legend class="form__title">Дополнительно</legend>
-        <input type="checkbox" id="notsugar" name="notsugar" checked>
+        <input class="visually-hidden" type="checkbox" id="notsugar" name="notsugar" checked>
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="notsugar">Сахарозаменитель</label>
-        <input type="checkbox" id="water" name="water">
+        <input class="visually-hidden" type="checkbox" id="water" name="water">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="water">Питьевая вода</label>
-        <input type="checkbox" id="milk" name="milk">
+        <input class="visually-hidden" type="checkbox" id="milk" name="milk">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="milk">Молоко</label>
-        <input type="checkbox" id="vitamins" name="vitamins">
+        <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+        <span class="form__checkbox"></span>
         <label class="form__label form__label--right" for="vitamins">Витамины</label>
       </fieldset>
 
@@ -93,8 +98,10 @@
   <footer class="page-footer">
 
     <section class="page-footer__contacts contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
       <img class="contacts__map" src="#" width="320" height="400"
         alt="Адрес компании «Cat Energy»: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
     </section>

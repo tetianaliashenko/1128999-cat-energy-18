@@ -1,0 +1,79 @@
+.example__wrapper {
+  padding: 33px 20px 38px 20px;
+  background-color: @grey;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 33px;
+
+  .font-apply();
+  font-size: 36px;
+  line-height: 36px;
+  color: @black;
+}
+
+.example__info {
+  margin: 0;
+  margin-bottom: 27px;
+
+  .font-apply(@font-family: "Arial");
+  font-size: 14px;
+  line-height: 18px;
+  color: @greyish-brown;
+}
+
+.example__element {
+  margin-bottom: 25px;
+}
+
+.example__amount {
+  padding-top: 17px;
+
+  .font-apply(@text-align: center);
+  font-size: 24px;
+  line-height: 24px;
+  color: @black;
+
+  text-transform: uppercase;
+}
+
+.example__action {
+  padding-top: 12px;
+
+  .font-apply(@font-family: "Arial"; @text-align: center);
+  font-size: 12px;
+  line-height: 12px;
+  color: @greyish-brown;
+}
+
+.example__costs {
+  margin: 0;
+  margin-bottom: 44px;
+
+  .font-apply(@text-align: center);
+  font-size: 14px;
+  line-height: 20px;
+  color: @black;
+
+  text-transform: uppercase;
+}
+
+.example__image {
+  margin-bottom: 35px;
+  padding-right: -20px;
+  padding-left: -20px;
+}
+
+.example__toggle {
+  .font-apply();
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+
+  text-transform: uppercase;
+
+  &--left {
+    margin-right: 121px;
+  }
+}
