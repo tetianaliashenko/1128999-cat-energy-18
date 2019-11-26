@@ -4,7 +4,7 @@
   align-content: center;
   width: 320px;
   margin: 0 auto;
-  padding: 29px 20px 0 20px;
+  padding: 29px 20px 0;
 
   .font-apply(@text-align: center);
   color: @white;
@@ -38,12 +38,21 @@
   margin-bottom: 3px;
 }
 
+.promo-block__button {
+  width: 280px;
+  height: 40px;
+  padding: 14px 73px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: @tablet-width) {
   .promo-block {
     position: relative;
     width: auto;
     margin: 0;
-    padding: 68px 0 0 0;
+    padding: 68px 0 0;
 
     .font-apply();
     color: @black;
@@ -78,12 +87,10 @@
     left: 90px;
     width: 245px;
     height: 52px;
-    padding: 17px 26px 15px 26px;
+    padding: 17px 26px;
 
-    .font-apply();
     font-size: 20px;
     line-height: 20px;
-    color: @white;
   }
 }
 
@@ -105,6 +112,8 @@
 
   .promo-block__button {
     position: relative;
+    bottom: 0;
+    left: 0;
   }
 
   .promo-block__image {
