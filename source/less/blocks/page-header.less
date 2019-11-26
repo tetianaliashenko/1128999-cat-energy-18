@@ -5,7 +5,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
-
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: @tablet-width;
+    margin: 0 auto;
     padding: 24px 30px 0 30px;
   }
 
@@ -18,6 +21,14 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    width: @desktop-width;
+    min-height: 696px;
     padding: 53px 110px 0 110px;
+
+    &--background {
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+    }
   }
 }

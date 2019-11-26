@@ -15,3 +15,37 @@
 .catalog-additional__list {
   margin-bottom: 39px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-additional {
+    padding: 0 30px 76px 30px;
+  }
+
+  .catalog-additional__title {
+    margin-bottom: 75px;
+    padding-left: 37px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .catalog-additional__list {
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-additional {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 110px 86px 110px;
+  }
+
+  .catalog-additional__title {
+    padding-left: 0;
+  }
+
+  .catalog-additional__list {
+    margin-bottom: 0;
+  }
+}

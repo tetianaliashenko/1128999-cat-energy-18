@@ -38,13 +38,12 @@
   margin-bottom: 3px;
 }
 
-
 @media (min-width: @tablet-width) {
   .promo-block {
     position: relative;
     width: auto;
     margin: 0;
-    padding-left: 91px;
+    padding: 68px 0 0 0;
 
     .font-apply();
     color: @black;
@@ -53,8 +52,9 @@
   }
 
   .promo-block__title {
-    width: 415px;
+    width: 505px;
     margin-bottom: 33px;
+    padding-left: 91px;
 
     font-size: 60px;
     line-height: 60px;
@@ -62,6 +62,7 @@
 
   .promo-block__slogan {
     margin-bottom: 20px;
+    padding-left: 91px;
 
     font-size: 20px;
     line-height: 20px;
@@ -88,19 +89,29 @@
 
 @media (min-width: @desktop-width) {
   .promo-block {
-    padding-left: 193px;
+    width: 585px;
+    padding: 118px 0 0 84px;
+  }
 
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+  .promo-block__title {
+    width: auto;
+    padding: 0;
   }
 
   .promo-block__slogan {
     margin-bottom: 53px;
-
-    font-size: 20px;
-    line-height: 20px;
+    padding: 0;
   }
 
+  .promo-block__button {
+    position: relative;
+  }
 
+  .promo-block__image {
+    position: absolute;
+    right: -130px;
+    bottom: -150px;
+
+    height: 499px;
+  }
 }

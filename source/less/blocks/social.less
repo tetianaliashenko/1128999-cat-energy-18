@@ -1,5 +1,8 @@
 .social {
-  padding: 25px 20px 23px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 0 23px 0;
 
   border-top: 1px solid @social-grey;
   border-bottom: 1px solid @social-grey;
@@ -8,3 +11,12 @@
 .social__list {
   .list-style();
 }
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding: 0;
+
+    border: none;
+  }
+}
+
