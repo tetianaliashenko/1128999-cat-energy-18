@@ -38,16 +38,26 @@
 }
 
 .example__element {
-  width: 124px;
-  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  &:first-of-type {
+  width: 124px;
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 13px 20px;
+
+  border: 1px solid @pinkish-grey;
+  border-radius: 3px;
+
+  &:nth-of-type(2n) {
     margin-right: 32px;
   }
 }
 
 .example__amount {
-  padding-top: 17px;
+  width: 100%;
 
   .font-apply(@text-align: center);
   font-size: 24px;
@@ -58,13 +68,18 @@
 }
 
 .example__action {
-  width: 57px;
-  padding-top: 12px;
+  position: absolute;
+  bottom: -23px;
+  left: 18px;
+  width: 87px;
+  padding: 5px 15px;
 
   .font-apply(@font-family: "Arial"; @text-align: center);
   font-size: 12px;
   line-height: 12px;
   color: @greyish-brown;
+
+  background-color: @grey;
 }
 
 .example__costs {
@@ -139,7 +154,7 @@
   }
 
   .example__results-wrapper {
-    padding: 0 30px 240px;
+    padding: 0 30px 86px;
   }
 
   .example__info {
@@ -152,32 +167,36 @@
 
   .example__element {
     width: 162px;
+    margin-bottom: 0;
+    padding: 16px 29px;
 
-    &:first-of-type {
+    &:nth-of-type(2n) {
       margin-right: 42px;
     }
   }
 
   .example__amount {
-    padding-top: 16px;
-
     font-size: 30px;
     line-height: 37px;
   }
 
   .example__action {
-    width: 125px;
-    padding-top: 15px;
+    bottom: -15px;
+    left: 10px;
+    width: 142px;
+    padding: 8px 7px;
 
     font-size: 14px;
     line-height: 14px;
+
+    background-color: @white;
   }
 
   .example__costs {
     width: 174px;
     margin: 0;
     margin-left: auto;
-    padding-top: 16px;
+    padding-top: 13px;
 
     .font-apply(@text-align: right);
     font-size: 20px;
@@ -185,23 +204,37 @@
   }
 
   .example__visual {
-    min-height: 462px;
+    min-height: 631px;
   }
 
-  .example__image {
-    margin: 0;
+  .example__image-wrapper {
+    width: 384px;
+    height: 462px;
+    padding-bottom: 114px;
+
+    overflow-x: hidden;
+    overflow-y: visible;
 
     &--before {
-      width: 384px;
+      padding-left: 46px;
 
       background-color: @grey;
     }
 
     &--after {
-      position: relative;
-      width: 384px;
+      padding-right: 86px;
 
       background-color: @example-grey;
+    }
+  }
+
+  .example__image {
+    min-width: 690px;
+    min-height: 517px;
+    margin: 0;
+
+    &--after {
+      position: static;
     }
   }
 
@@ -254,7 +287,11 @@
   }
 
   .example__element {
-    margin-bottom: 48px;
+    margin-bottom: 62px;
+  }
+
+  .example__action {
+    background-color: @grey;
   }
 
   .example__costs {
@@ -267,17 +304,26 @@
     line-height: 20px;
   }
 
-  .example__visual {
-    width: auto;
+  .example__costs span {
+    margin-left: 57px;
   }
 
-  .example__image {
+  .example__visual {
+    width: auto;
+    min-height: 652px;
+  }
+
+  .example__image-wrapper {
+    padding-bottom: 135px;
+
     &--before {
-      width: 395px;
+      width: 500px;
+      padding-left: 134px;
     }
 
     &--after {
       width: 395px;
+      padding-right: 124px;
     }
   }
 
