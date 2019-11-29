@@ -6,6 +6,7 @@
 .example__wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   padding: 33px 20px 38px;
   background-color: @grey;
 }
@@ -37,49 +38,9 @@
   color: @greyish-brown;
 }
 
-.example__element {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  width: 124px;
-  margin: 0;
-  margin-bottom: 38px;
-  padding: 13px 20px;
-
-  border: 1px solid @pinkish-grey;
-  border-radius: 3px;
-
-  &:nth-of-type(2n) {
-    margin-right: 32px;
-  }
-}
-
-.example__amount {
-  width: 100%;
-
-  .font-apply(@text-align: center);
-  font-size: 24px;
-  line-height: 24px;
-  color: @black;
-
-  text-transform: uppercase;
-}
-
-.example__action {
-  position: absolute;
-  bottom: -23px;
-  left: 18px;
-  width: 87px;
-  padding: 5px 15px;
-
-  .font-apply(@font-family: "Arial"; @text-align: center);
-  font-size: 12px;
-  line-height: 12px;
-  color: @greyish-brown;
-
-  background-color: @grey;
+.example__statistic {
+  width: auto;
+  margin-bottom: 25px;
 }
 
 .example__costs {
@@ -154,7 +115,7 @@
   }
 
   .example__results-wrapper {
-    padding: 0 30px 86px;
+    padding: 0 30px 255px;
   }
 
   .example__info {
@@ -165,31 +126,8 @@
     line-height: 24px;
   }
 
-  .example__element {
-    width: 162px;
+  .example__statistic {
     margin-bottom: 0;
-    padding: 16px 29px;
-
-    &:nth-of-type(2n) {
-      margin-right: 42px;
-    }
-  }
-
-  .example__amount {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .example__action {
-    bottom: -15px;
-    left: 10px;
-    width: 142px;
-    padding: 8px 7px;
-
-    font-size: 14px;
-    line-height: 14px;
-
-    background-color: @white;
   }
 
   .example__costs {
@@ -204,27 +142,24 @@
   }
 
   .example__visual {
-    min-height: 631px;
+    position: relative;
+    height: 462px;
+
+    background-color: @grey;
   }
 
   .example__image-wrapper {
+    position: absolute;
     width: 384px;
-    height: 462px;
-    padding-bottom: 114px;
 
     overflow-x: hidden;
-    overflow-y: visible;
 
     &--before {
-      padding-left: 46px;
-
-      background-color: @grey;
+      top: -151px;
     }
 
     &--after {
-      padding-right: 86px;
-
-      background-color: @example-grey;
+      top: -169px;
     }
   }
 
@@ -233,8 +168,15 @@
     min-height: 517px;
     margin: 0;
 
+    &--before {
+      position: relative;
+      left: 46px;
+    }
+
     &--after {
-      position: static;
+      position: relative;
+      right: 340px;
+      z-index: 1;
     }
   }
 
@@ -275,8 +217,8 @@
   }
 
   .example__results-wrapper {
-    width: 540px;
-    padding: 76px 0 75px 110px;
+    width: 650px;
+    padding: 75px 110px;
 
     background-color: @grey;
   }
@@ -286,12 +228,8 @@
     margin-bottom: 71px;
   }
 
-  .example__element {
-    margin-bottom: 62px;
-  }
-
-  .example__action {
-    background-color: @grey;
+  .example__statistic {
+    margin-bottom: 30px;
   }
 
   .example__costs {
@@ -309,25 +247,33 @@
   }
 
   .example__visual {
-    width: auto;
-    min-height: 652px;
+    height: auto;
+
+    overflow-y: visible;
+
+    background-color: @grey;
   }
 
   .example__image-wrapper {
-    padding-bottom: 135px;
+    width: 395px;
 
+    overflow-x: hidden;
+  }
+
+  .example__image {
     &--before {
-      width: 500px;
-      padding-left: 134px;
+      top: -172px;
+      left: 30px;
     }
 
     &--after {
-      width: 395px;
-      padding-right: 124px;
+      top: -190px;
+      right: 340px;
     }
   }
 
   .example__toggles {
-    left: 219px;
+    bottom: 85px;
+    left: 110px;
   }
 }
