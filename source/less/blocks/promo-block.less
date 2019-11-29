@@ -1,26 +1,124 @@
 .promo-block {
-  padding: 29px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 29px 20px 0;
 
   .font-apply(@text-align: center);
   color: @white;
 
-  background-color: @leaf;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .promo-block__title {
+  width: 280px;
+  margin: 0;
   margin-bottom: 19px;
 
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .promo-block__slogan {
+  margin: 0;
   margin-bottom: 29px;
 
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.promo-block__image {
+  height: 270px;
+  margin-bottom: 3px;
+}
+
+.promo-block__button {
+  width: 280px;
+  padding: 14px 73px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-block {
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 68px 0 0;
+
+    .font-apply();
+    color: @black;
+
+    background-image: none;
+  }
+
+  .promo-block__title {
+    width: 505px;
+    margin-bottom: 33px;
+    padding-left: 91px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo-block__slogan {
+    margin-bottom: 20px;
+    padding-left: 91px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo-block__image {
+    height: 609px;
+  }
+
+  .promo-block__button {
+    position: absolute;
+    bottom: 529px;
+    left: 90px;
+    width: 245px;
+    padding: 17px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-block {
+    width: 585px;
+    padding: 118px 0 0 84px;
+  }
+
+  .promo-block__title {
+    width: auto;
+    padding: 0;
+  }
+
+  .promo-block__slogan {
+    margin-bottom: 53px;
+    padding: 0;
+  }
+
+  .promo-block__button {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .promo-block__image {
+    position: absolute;
+    right: -130px;
+    bottom: -150px;
+
+    height: 499px;
+  }
 }

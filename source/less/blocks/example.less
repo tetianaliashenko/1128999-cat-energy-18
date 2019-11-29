@@ -1,5 +1,13 @@
+.example {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .example__wrapper {
-  padding: 33px 20px 38px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 33px 20px 38px;
   background-color: @grey;
 }
 
@@ -13,7 +21,14 @@
   color: @black;
 }
 
+.example__results-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .example__info {
+  width: 266px;
   margin: 0;
   margin-bottom: 27px;
 
@@ -23,32 +38,13 @@
   color: @greyish-brown;
 }
 
-.example__element {
+.example__statistic {
+  width: auto;
   margin-bottom: 25px;
 }
 
-.example__amount {
-  padding-top: 17px;
-
-  .font-apply(@text-align: center);
-  font-size: 24px;
-  line-height: 24px;
-  color: @black;
-
-  text-transform: uppercase;
-}
-
-.example__action {
-  padding-top: 12px;
-
-  .font-apply(@font-family: "Arial"; @text-align: center);
-  font-size: 12px;
-  line-height: 12px;
-  color: @greyish-brown;
-}
-
 .example__costs {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 44px;
 
   .font-apply(@text-align: center);
@@ -59,10 +55,34 @@
   text-transform: uppercase;
 }
 
+.example__visual {
+  width: 320px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .example__image {
   margin-bottom: 35px;
-  padding-right: -20px;
-  padding-left: -20px;
+
+  &--before {
+    z-index: 1;
+  }
+
+  &--after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.example__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .example__toggle {
@@ -72,8 +92,178 @@
   color: @black;
 
   text-transform: uppercase;
+}
 
-  &--left {
-    margin-right: 121px;
+@media (min-width: @tablet-width) {
+  .example {
+    width: @tablet-width;
+  }
+
+  .example__wrapper {
+    padding: 51px 0 0;
+
+    background-color: @white;
+  }
+
+  .example__title {
+    margin-bottom: 60px;
+    padding-left: 30px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__results-wrapper {
+    padding: 0 30px 255px;
+  }
+
+  .example__info {
+    width: 675px;
+    margin-bottom: 56px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__statistic {
+    margin-bottom: 0;
+  }
+
+  .example__costs {
+    width: 174px;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 13px;
+
+    .font-apply(@text-align: right);
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .example__visual {
+    position: relative;
+    width: 768px;
+    height: 462px;
+    padding-top: 369px;
+
+    background-color: @grey;
+  }
+
+  .example__image-wrapper {
+    position: absolute;
+    width: 384px;
+
+    overflow-x: hidden;
+
+    &--before {
+      top: -175px;
+    }
+
+    &--after {
+      left: 384px;
+      top: -169px;
+    }
+  }
+
+  .example__image {
+    min-width: 690px;
+    min-height: 517px;
+    margin: 0;
+
+    &--before {
+      position: relative;
+      left: 46px;
+    }
+
+    &--after {
+      position: relative;
+      right: 335px;
+      z-index: 1;
+    }
+  }
+
+  .example__toggles {
+    width: 568px;
+  }
+
+  .example__toggle {
+    padding-bottom: 6px;
+
+    font-size: 20px;
+
+    border-bottom: 1px dotted @underline-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    width: @desktop-width;
+  }
+
+  .example__wrapper {
+    padding: 90px 0 0;
+  }
+
+  .example__title {
+    width: 100%;
+    margin-bottom: 66px;
+    padding-left: 110px;
+  }
+
+  .example__results-wrapper {
+    width: 650px;
+    padding: 75px 110px;
+
+    background-color: @grey;
+  }
+
+  .example__info {
+    width: 430px;
+    margin-bottom: 71px;
+  }
+
+  .example__statistic {
+    margin-bottom: 30px;
+  }
+
+  .example__costs {
+    width: 326px;
+    margin: 0;
+    padding-top: 0;
+
+    .font-apply();
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__costs span {
+    margin-left: 57px;
+  }
+
+  .example__visual {
+    width: 790px;
+  }
+
+  .example__image-wrapper {
+    width: 395px;
+
+    &--before {
+      top: -183px;
+    }
+
+    &--after {
+      left: 395px;
+      top: -185px;
+    }
+  }
+
+  .example__image {
+    &--before {
+      left: 30px;
+    }
+
+    &--after {
+      right: 363px;
+    }
   }
 }
