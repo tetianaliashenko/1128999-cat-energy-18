@@ -56,6 +56,7 @@
 }
 
 .example__visual {
+  width: 320px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -143,6 +144,7 @@
 
   .example__visual {
     position: relative;
+    width: 768px;
     height: 462px;
 
     background-color: @grey;
@@ -155,10 +157,11 @@
     overflow-x: hidden;
 
     &--before {
-      top: -151px;
+      top: -175px;
     }
 
     &--after {
+      left: 384px;
       top: -169px;
     }
   }
@@ -175,7 +178,7 @@
 
     &--after {
       position: relative;
-      right: 340px;
+      right: 335px;
       z-index: 1;
     }
   }
@@ -247,33 +250,34 @@
   }
 
   .example__visual {
-    height: auto;
-
-    overflow-y: visible;
-
-    background-color: @grey;
+    width: 790px;
   }
 
   .example__image-wrapper {
     width: 395px;
 
-    overflow-x: hidden;
+    &--before {
+      top: -183px;
+    }
+
+    &--after {
+      left: 395px;
+      top: -185px;
+    }
   }
 
   .example__image {
     &--before {
-      top: -172px;
       left: 30px;
     }
 
     &--after {
-      top: -190px;
-      right: 340px;
+      right: 363px;
     }
   }
 
   .example__toggles {
-    bottom: 85px;
+    bottom: 72px;
     left: 110px;
   }
 }
