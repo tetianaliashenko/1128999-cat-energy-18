@@ -63,12 +63,14 @@
 
       <fieldset class="form__fieldset">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
-        <label class="form__label" for="email">E-mail:*
-          <input class="form__input form__input--email" type="email" placeholder="kuklachev@gmail.com" id="email"
-            name="owner-email" required></label>
-        <label class="form__label" for="phone">Телефон:*
-          <input class="form__input form__input--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone"
-            name="owner-phone" required></label>
+        <div class="form__wrapper">
+          <label class="form__label" for="email">E-mail:*
+            <input class="form__input form__input--email" type="email" placeholder="kuklachev@gmail.com" id="email"
+              name="owner-email" required></label>
+          <label class="form__label" for="phone">Телефон:*
+            <input class="form__input form__input--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone"
+              name="owner-phone" required></label>
+        </div>
       </fieldset>
 
       <fieldset class="form__fieldset">
@@ -79,18 +81,14 @@
 
       <fieldset class="form__fieldset form__fieldset--row">
         <legend class="form__title">Дополнительно</legend>
-        <input class="visually-hidden" type="checkbox" id="notsugar" name="notsugar" checked>
-        <span class="form__checkbox"></span>
-        <label class="form__label form__label--right" for="notsugar">Сахарозаменитель</label>
-        <input class="visually-hidden" type="checkbox" id="water" name="water">
-        <span class="form__checkbox"></span>
-        <label class="form__label form__label--right" for="water">Питьевая вода</label>
-        <input class="visually-hidden" type="checkbox" id="milk" name="milk">
-        <span class="form__checkbox"></span>
-        <label class="form__label form__label--right" for="milk">Молоко</label>
-        <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-        <span class="form__checkbox"></span>
-        <label class="form__label form__label--right" for="vitamins">Витамины</label>
+        <label class="form__label form__label--right" for="notsugar">Сахарозаменитель
+          <input class="visually-hidden" type="checkbox" id="notsugar" name="notsugar" checked></label>
+        <label class="form__label form__label--right" for="water">Питьевая вода
+          <input class="visually-hidden" type="checkbox" id="water" name="water"></label>
+        <label class="form__label form__label--right" for="milk">Молоко
+          <input class="visually-hidden" type="checkbox" id="milk" name="milk"></label>
+        <label class="form__label form__label--right" for="vitamins">Витамины
+          <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins"></label>
       </fieldset>
 
       <button class="form__button button" type="submit">Отправить заявку</button>
