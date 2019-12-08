@@ -12,10 +12,10 @@
 
   <header class="page-header">
     <a class="page-header__logo logo" href="index.html">
-      <img src="#" width="191" height="39" alt="Логотип «Кэт энерджи»">
+      <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
     </a>
+
     <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -28,6 +28,8 @@
         </li>
       </ul>
     </nav>
+
+    <button class="page-header__toggle" type="button" aria-label="Переключатель меню"></button>
   </header>
 
   <main class="page-main">
@@ -49,19 +51,16 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--border">
-          <input class="visually-hidden" type="radio" id="target-thin" name="target-info" checked>
-          <span class="form__radio-button"></span>
-          <label class="form__label form__label--right" for="target-thin">Похудение</label>
-          <input class="visually-hidden" type="radio" id="target-mass" name="target-info">
-          <span class="form__radio-button"></span>
-          <label class="form__label form__label--right" for="target-mass">Набор массы</label>
-          <input class="visually-hidden" type="radio" id="target-unknown" name="target-info">
-          <span class="form__radio-button"></span>
-          <label class="form__label form__label--right" for="target-unknown">Не знаю (Нужен ваш совет)</label>
+          <input class="visually-hidden form__radio" type="radio" id="target-thin" name="target-info" checked>
+          <label class="form__label form__label--right form__label--radio" for="target-thin">Похудение</label>
+          <input class="visually-hidden form__radio" type="radio" id="target-mass" name="target-info">
+          <label class="form__label form__label--right form__label--radio" for="target-mass">Набор массы</label>
+          <input class="visually-hidden form__radio" type="radio" id="target-unknown" name="target-info">
+          <label class="form__label form__label--right form__label--radio" for="target-unknown">Не знаю (Нужен ваш совет)</label>
         </fieldset>
       </div>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--line">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
         <div class="form__wrapper">
           <label class="form__label form__label--without-margin" for="email">E-mail:*
@@ -73,23 +72,23 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--line">
         <legend class="form__title">Комментарий</legend>
         <textarea class="form__textarea" rows="7" name="comments"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--last">
+      <fieldset class="form__fieldset form__fieldset--last form__fieldset--line">
         <legend class="form__title">Дополнительно</legend>
         <div class="form__wrapper-additional">
-          <label class="form__label form__label--right" for="notsugar">Сахарозаменитель
-            <input class="visually-hidden" type="checkbox" id="notsugar" name="notsugar" checked></label>
-          <label class="form__label form__label--right" for="water">Питьевая вода
-            <input class="visually-hidden" type="checkbox" id="water" name="water"></label>
-          <label class="form__label form__label--right" for="milk">Молоко
-            <input class="visually-hidden" type="checkbox" id="milk" name="milk"></label>
-          <label class="form__label form__label--right" for="vitamins">Витамины
-            <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins"></label>
+          <input class="visually-hidden form__checkbox" type="checkbox" id="notsugar" name="notsugar" checked>
+          <label class="form__label form__label--right form__label--checkbox" for="notsugar">Сахарозаменитель</label>
+          <input class="visually-hidden form__checkbox" type="checkbox" id="water" name="water">
+          <label class="form__label form__label--right form__label--checkbox" for="water">Питьевая вода</label>
+          <input class="visually-hidden form__checkbox" type="checkbox" id="milk" name="milk">
+          <label class="form__label form__label--right form__label--checkbox" for="milk">Молоко</label>
+          <input class="visually-hidden form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+          <label class="form__label form__label--right form__label--checkbox" for="vitamins">Витамины</label>
         </div>
       </fieldset>
 
@@ -111,7 +110,7 @@
 
     <div class="page-footer__wrapper">
       <a class="page-footer__logo logo" href="index.html">
-        <img src="#" width="128" height="24" alt="Логотип «Кэт энерджи»">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип «Кэт энерджи»">
       </a>
 
       <div class="page-footer__social social">
@@ -134,7 +133,7 @@
         <h2 class="visually-hidden">Разработано:</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="../img/htmlacademy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
         </a>
       </div>
     </div>
