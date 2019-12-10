@@ -44,45 +44,24 @@
     height: 60px;
 
     background-color: @leaf;
-  }
-
-  &--ingredients,
-  &--comfort,
-  &--replacement,
-  &--time {
-    position: relative;
-  }
-
-  &--ingredients::after,
-  &--comfort::after,
-  &--replacement::after,
-  &--time::after {
-    content: "";
-
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    z-index: 3;
-
-    width: 50px;
-    height: 50px;
 
     background-repeat: no-repeat;
+    background-position: 5px 5px;
   }
 
-  &--ingredients::after {
+  &--ingredients::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--comfort::after {
+  &--comfort::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--replacement::after {
+  &--replacement::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--time::after {
+  &--time::before {
     background-image: url("../img/advantage-clock@1x.png");
   }
 }
@@ -130,11 +109,13 @@
     &::before {
       width: 80px;
       height: 80px;
+
+      background-position: 15px 15px;
     }
 
     &::after {
       position: absolute;
-      top: 0;
+      top: -40px;
       right: 3px;
       z-index: -1;
 
@@ -145,17 +126,6 @@
 
       counter-increment: section;
       content: "" counter(section) "";
-    }
-
-    &--ingredients::after,
-    &--comfort::after,
-    &--replacement::after,
-    &--time::after {
-      top: 15px;
-      left: 15px;
-
-      width: 50px;
-      height: 50px;
     }
   }
 }

@@ -56,12 +56,15 @@
           <input class="visually-hidden form__radio" type="radio" id="target-mass" name="target-info">
           <label class="form__label form__label--right form__label--radio" for="target-mass">Набор массы</label>
           <input class="visually-hidden form__radio" type="radio" id="target-unknown" name="target-info">
-          <label class="form__label form__label--right form__label--radio" for="target-unknown">Не знаю (Нужен ваш совет)</label>
+          <label class="form__label form__label--right form__label--radio" for="target-unknown">Не знаю (Нужен ваш
+            совет)</label>
         </fieldset>
       </div>
 
-      <fieldset class="form__fieldset form__fieldset--line">
-        <legend class="form__title">Контактные данные (владельца кота)</legend>
+      <fieldset class="form__fieldset">
+        <div class="form__title-wrapper">
+          <legend class="form__title form__title--fixed-width">Контактные данные (владельца кота)</legend>
+        </div>
         <div class="form__wrapper">
           <label class="form__label form__label--without-margin" for="email">E-mail:*
             <input class="form__input form__input--email" type="email" placeholder="kuklachev@gmail.com" id="email"
@@ -72,14 +75,18 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--line">
-        <legend class="form__title">Комментарий</legend>
+      <fieldset class="form__fieldset">
+        <div class="form__title-wrapper">
+          <legend class="form__title">Комментарий</legend>
+        </div>
         <textarea class="form__textarea" rows="7" name="comments"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--last form__fieldset--line">
-        <legend class="form__title">Дополнительно</legend>
+      <fieldset class="form__fieldset form__fieldset--last">
+        <div class="form__title-wrapper">
+          <legend class="form__title">Дополнительно</legend>
+        </div>
         <div class="form__wrapper-additional">
           <input class="visually-hidden form__checkbox" type="checkbox" id="notsugar" name="notsugar" checked>
           <label class="form__label form__label--right form__label--checkbox" for="notsugar">Сахарозаменитель</label>
