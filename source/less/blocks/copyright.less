@@ -1,26 +1,42 @@
 .copyright {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  padding: 22px 0 28px;
 }
 
 .copyright__link {
   display: inline-block;
   vertical-align: center;
 
-  padding-top: 31px;
-  padding-bottom: 37px;
-
   .font-apply(@font-family: "Arial");
   font-size: 16px;
   line-height: 16px;
   color: @greyish-brown;
   text-decoration: none;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .copyright__logo {
-  display: inline-block;
-  vertical-align: center;
+  &:hover {
+    color: @leaf;
+  }
 
-  padding-top: 22px;
-  padding-bottom: 28px;
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__link {
+    margin-right: 23px;
+  }
 }

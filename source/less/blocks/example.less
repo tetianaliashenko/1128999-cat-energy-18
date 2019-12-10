@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 33px 20px 38px;
+  padding: 28px 20px 0;
   background-color: @grey;
 }
 
@@ -40,7 +40,7 @@
 
 .example__statistic {
   width: auto;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .example__costs {
@@ -56,42 +56,114 @@
 }
 
 .example__visual {
-  width: 320px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 320px;
+  min-height: 320px;
+  padding-top: 261px;
 }
 
 .example__image {
-  margin-bottom: 35px;
-
   &--before {
-    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    z-index: 0;
   }
 
   &--after {
+    display: none;
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: -1;
+    left: 5px;
+    z-index: 0;
   }
 }
 
 .example__toggles {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 198px;
   margin: 0 auto;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 55px;
+    z-index: 7;
+
+    width: 84px;
+    height: 14px;
+    border-radius: 6px;
+
+    background-color: @white;
+
+    border: solid 1px @pinkish-grey;
+  }
 }
 
 .example__toggle {
+  position: relative;
+
   .font-apply();
   font-size: 16px;
   line-height: 20px;
   color: @black;
 
   text-transform: uppercase;
+
+  &--left::before {
+    display: none;
+
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    right: -58px;
+    z-index: 10;
+
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+
+    background-color: @leaf;
+  }
+
+  &--right::before {
+    display: none;
+
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: -61px;
+    z-index: 10;
+
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+
+    background-color: @leaf;
+  }
+}
+
+.example__radio--previous:checked ~ .example__toggles .example__toggle--left::before {
+  display: block;
+}
+
+.example__radio--current:checked ~ .example__toggles .example__toggle--right::before {
+  display: block;
+}
+
+.example__radio--previous:checked ~ .example__image-wrapper .example__image--before {
+  display: block;
+}
+
+.example__radio--current:checked ~ .example__image-wrapper .example__image--after {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -171,19 +243,67 @@
     margin: 0;
 
     &--before {
+      display: block;
       position: relative;
       left: 46px;
+      z-index: 1;
     }
 
     &--after {
+      display: block;
       position: relative;
-      right: 335px;
+      left: -335px;
       z-index: 1;
     }
   }
 
   .example__toggles {
     width: 568px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 8px;
+      left: 67px;
+      z-index: 7;
+
+      width: 428px;
+      height: 6px;
+      border-radius: 2.5px;
+
+      background-color: @range-grey;
+
+      border: none;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -5px;
+      left: 270px;
+      z-index: 8;
+
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+
+      background-color: @white;
+
+      border: solid 1px @pinkish-grey;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+      }
+
+      &:active {
+        border: solid 2px @leaf;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 
   .example__toggle {
@@ -192,6 +312,40 @@
     font-size: 20px;
 
     border-bottom: 1px dotted @underline-grey;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(152, 152, 152, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+
+    &--left::after {
+      content: "";
+
+      position: absolute;
+      top: 8px;
+      left: 283px;
+      z-index: 9;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      background-color: @leaf;
+
+      border: none;
+    }
+  }
+
+  .example__radio-previous:checked ~ .example__toggle--left::before {
+    display: none;
+  }
+
+  .example__radio-current:checked ~ .example__toggle--right::before {
+    display: none;
   }
 }
 
@@ -201,7 +355,7 @@
   }
 
   .example__wrapper {
-    padding: 90px 0 0;
+    padding: 65px 0 0;
   }
 
   .example__title {
@@ -263,7 +417,7 @@
     }
 
     &--after {
-      right: 363px;
+      left: -363px;
     }
   }
 }

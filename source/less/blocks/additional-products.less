@@ -1,5 +1,8 @@
 .additional-products {
   .list-style();
+
+  width: 320px;
+  padding: 0 20px;
 }
 
 .additional-products__item {
@@ -50,6 +53,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .additional-products {
+    width: 708px;
+    padding: 0 0;
+  }
+
   .additional-products__item {
     display: flex;
     flex-wrap: wrap;
@@ -88,10 +96,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .additional-products {
+    width: 932px;
+    padding-left: 37px;
+  }
+
   .additional-products__item {
     align-items: center;
     width: 895px;
-    margin-right: 39px;
     padding: 15px 0;
 
     border: 0;
