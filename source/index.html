@@ -12,7 +12,11 @@
 
   <header class="page-header page-header--background">
     <a class="page-header__logo logo">
-      <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="203" height="60">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="59">
+        <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»">
+      </picture>
     </a>
 
     <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -37,7 +41,8 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-        <img class="promo-block__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм «Кэт энерджи»">
+        <img class="promo-block__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+          alt="Корм «Кэт энерджи»">
       </picture>
       <a class="promo-block__button button" href="form.html">Подобрать программу</a>
     </section>
@@ -100,7 +105,8 @@
           <p class="example__costs">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
         <div class="example__visual">
-          <input class="visually-hidden example__radio example__radio--previous" type="radio" id="previous" name="visual" checked>
+          <input class="visually-hidden example__radio example__radio--previous" type="radio" id="previous"
+            name="visual" checked>
           <input class="visually-hidden example__radio example__radio--current" type="radio" id="current" name="visual">
 
           <div class="example__toggles">
@@ -109,12 +115,20 @@
           </div>
 
           <div class="example__image-wrapper example__image-wrapper--before">
-            <img class="example__image example__image--before" src="img/before-tablet@1x.png" width="320" height="232"
-              alt="Кот Борис раньше">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+              <img class="example__image example__image--before" src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" width="320" height="232" alt="Кот Борис раньше">
+            </picture>
           </div>
           <div class="example__image-wrapper example__image-wrapper--after">
-            <img class="example__image example__image--after" src="img/after-tablet@1x.png" width="320" height="232"
-              alt="Кот Борис сейчас">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+              <img class="example__image example__image--after" src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" width="320" height="232" alt="Кот Борис сейчас">
+            </picture>
           </div>
         </div>
       </div>
@@ -129,8 +143,12 @@
         <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
         <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400"
-        alt="Адрес компании «Cat Energy»: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+          alt="Адрес компании «Cat Energy»: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </picture>
     </section>
 
     <div class="page-footer__wrapper">
@@ -157,8 +175,8 @@
       <div class="page-footer__copyright copyright">
         <h2 class="visually-hidden">Разработано:</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34"
-            alt="Логотип «HTML Academy»"></a>
+        <a href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="img/htmlacademy.svg"
+            width="27" height="34" alt="Логотип «HTML Academy»"></a>
       </div>
     </div>
 

@@ -6,9 +6,9 @@
 
 .page-header__logo {
   display: inline-block;
-  width: 230px;
-  height: 65px;
-  padding: 15px 20px;
+  width: 191px;
+  height: 39px;
+  margin: 12px 0 15px 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,10 +21,10 @@
   }
 
   .page-header__logo {
+    width: 174px;
     height: 59px;
-
+    margin: 0;
     margin-right: auto;
-    padding: 0;
   }
 
   .page-header__toggle {
@@ -38,9 +38,21 @@
     padding: 53px 110px 0;
 
     &--background {
+      min-height: 696px;
+
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 100% 0;
+      background-size: 720px 696px;
+      background-position: 720px 0;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
+  }
+
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
   }
 }

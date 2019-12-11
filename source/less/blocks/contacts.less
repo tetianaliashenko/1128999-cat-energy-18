@@ -36,7 +36,22 @@
 }
 
 .contacts__map {
-  height: 400px;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 139px;
+    left: 136px;
+    z-index: 5;
+
+    width: 55px;
+    height: 53px;
+
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -63,6 +78,16 @@
 
     .font-apply(@font-family: "Arial"; @text-align: right);
     font-size: 16px;
+  }
+
+  .contacts__map {
+    &::after {
+      top: 150px;
+      left: 333px;
+
+      width: 113px;
+      height: 106px;
+    }
   }
 }
 
@@ -91,5 +116,11 @@
 
   .contacts__info {
     .font-apply(@font-family: "Arial");
+  }
+
+  .contacts__map {
+    &::after {
+      left: 1009px;
+    }
   }
 }
