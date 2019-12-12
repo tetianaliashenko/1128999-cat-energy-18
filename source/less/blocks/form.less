@@ -218,6 +218,11 @@
 .form__label--radio,
 .form__label--checkbox {
   position: relative;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: @input-grey;
+  }
 }
 
 .form__label--radio::before,
@@ -235,14 +240,6 @@
   background-color: @white;
 
   border: solid 1px @pinkish-grey;
-}
-
-.form__label--radio,
-.form__label--checkbox {
-  &:hover::before,
-  &:focus::before {
-    border-color: @input-grey;
-  }
 }
 
 .form__label--checkbox::before {
