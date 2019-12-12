@@ -111,6 +111,12 @@
     &--active {
       .main-nav__link {
         border-bottom: 2px solid @leaf;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: @darker-black;
+        }
       }
     }
   }
@@ -150,6 +156,16 @@
     &--white {
       .main-nav__link {
         border-bottom: 2px solid @white;
+      }
+    }
+
+    &--active {
+      .main-nav__link--white {
+        &:hover,
+        &:focus,
+        &:active {
+          color: @white;
+        }
       }
     }
   }

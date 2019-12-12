@@ -23,7 +23,7 @@
   width: 320px;
   margin: 0;
   margin-bottom: 31px;
-  padding: 0 20px;
+  padding: 0;
 
   border: none;
 
@@ -36,6 +36,22 @@
   &--last {
     padding-bottom: 10px;
   }
+}
+
+.form__wrapper {
+  padding: 0 20px;
+
+  &--no-padding {
+    padding: 0;
+
+    .form__fieldset:first-of-type {
+      padding: 0 20px;
+    }
+  }
+}
+
+.form__wrapper-additional {
+  padding: 0 20px;
 }
 
 .form__title {
@@ -66,7 +82,7 @@
 .form__title-text {
   display: inline-block;
   width: auto;
-  padding-right: 25px;
+  padding: 0 25px 0 20px;
 
   background-color: @white;
 }
@@ -311,6 +327,12 @@
   .form__wrapper {
     width: @tablet-width;
     padding: 0 70px;
+
+    &--no-padding {
+      .form__fieldset:first-of-type {
+        padding: 0;
+      }
+    }
   }
 
   .form__title {
