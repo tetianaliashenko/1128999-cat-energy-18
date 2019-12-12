@@ -136,6 +136,7 @@
 
   &:active {
     border-color: @greyish-brown;
+    outline: none;
   }
 
   &--email,
@@ -155,7 +156,6 @@
 
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
   }
 
   &--phone::after {
@@ -170,7 +170,6 @@
 
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-position: 0 0;
   }
 
   &--email:active::after {
@@ -238,6 +237,14 @@
   border: solid 1px @pinkish-grey;
 }
 
+.form__label--radio,
+.form__label--checkbox {
+  &:hover::before,
+  &:focus::before {
+    border-color: @input-grey;
+  }
+}
+
 .form__label--checkbox::before {
   border-radius: 0;
 }
@@ -283,16 +290,9 @@
   display: block;
 }
 
-.form__radio,
-.form__checkbox {
-  &:hover,
-  &:focus {
-    border-color: @input-grey;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+.form__radio:disabled + .form__label--radio,
+.form__checkbox:disabled + .form__label--checkbox {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
