@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   width: 320px;
   margin: 0 auto;
 }
@@ -35,8 +36,14 @@
   color: @greyish-brown;
 }
 
-.contacts__map {
-  height: 400px;
+.contacts__pointer {
+  position: absolute;
+
+  top: 290px;
+  left: 136px;
+  z-index: 5;
+
+  height: 55px;
 }
 
 @media (min-width: @tablet-width) {
@@ -64,6 +71,13 @@
     .font-apply(@font-family: "Arial"; @text-align: right);
     font-size: 16px;
   }
+
+  .contacts__pointer {
+    top: 350px;
+    left: 333px;
+
+    height: 106px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -77,8 +91,10 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    z-index: 4;
     width: 570px;
     padding: 69px 90px 60px 76px;
+
 
     background-color: @white;
   }
@@ -91,5 +107,10 @@
 
   .contacts__info {
     .font-apply(@font-family: "Arial");
+  }
+
+  .contacts__pointer {
+    top: 150px;
+    left: 1009px;
   }
 }

@@ -84,6 +84,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 198px;
   margin: 0 auto;
 
@@ -115,14 +116,14 @@
 
   text-transform: uppercase;
 
-  &--left::before {
+  &--left::before,
+  &--right::before {
     display: none;
 
     content: "";
 
     position: absolute;
     top: 9px;
-    right: -58px;
     z-index: 10;
 
     width: 35px;
@@ -132,21 +133,12 @@
     background-color: @leaf;
   }
 
+  &--left::before {
+    right: -58px;
+  }
+
   &--right::before {
-    display: none;
-
-    content: "";
-
-    position: absolute;
-    top: 9px;
     left: -61px;
-    z-index: 10;
-
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-
-    background-color: @leaf;
   }
 }
 
@@ -261,48 +253,7 @@
     width: 568px;
 
     &::after {
-      content: "";
-
-      position: absolute;
-      top: 8px;
-      left: 67px;
-      z-index: 7;
-
-      width: 428px;
-      height: 6px;
-      border-radius: 2.5px;
-
-      background-color: @range-grey;
-
-      border: none;
-    }
-
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: -5px;
-      left: 270px;
-      z-index: 8;
-
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-
-      background-color: @white;
-
-      border: solid 1px @pinkish-grey;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-
-      &:hover,
-      &:focus {
-        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
-      }
-
-      &:active {
-        border: solid 2px @leaf;
-        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-      }
+      display: none;
     }
   }
 
@@ -322,29 +273,68 @@
       border-bottom: none;
     }
 
-    &--left::after {
-      content: "";
-
-      position: absolute;
-      top: 8px;
-      left: 283px;
-      z-index: 9;
-
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-
-      background-color: @leaf;
-
-      border: none;
+    &--left::before {
+      display: none;
     }
   }
 
-  .example__radio-previous:checked ~ .example__toggle--left::before {
+  .example__scale {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2.5px;
+
+    background-color: @range-grey;
+
+    border: none;
+  }
+
+  .example__range {
+    position: absolute;
+    top: -15px;
+    left: 200px;
+    z-index: 2;
+
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    background-color: @white;
+
+    border: solid 1px @pinkish-grey;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid @leaf;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .example__point {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background-color: @leaf;
+
+    border: none;
+  }
+
+  .example__radio--previous:checked ~ .example__toggles .example__toggle--left::before {
     display: none;
   }
 
-  .example__radio-current:checked ~ .example__toggle--right::before {
+  .example__radio--current:checked ~ .example__toggles .example__toggle--right::before {
     display: none;
   }
 }

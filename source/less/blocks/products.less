@@ -33,7 +33,7 @@
 }
 
 .products__title {
-  width: 72px;
+  width: 75px;
   margin: 0;
   margin-bottom: 18px;
   padding-top: 25px;
@@ -91,6 +91,7 @@
 .products__image {
   order: 1;
   width: 140px;
+  height: 144px;
 }
 
 .products__button {
@@ -186,8 +187,15 @@
 
   .products__image {
     position: absolute;
-    left: 83px;
+    left: 0;
     bottom: 305px;
+
+    width: auto;
+    height: 172px;
+
+    &--large {
+      height: 208px;
+    }
   }
 
   .products__button {
@@ -228,9 +236,5 @@
   .products__button {
     width: 169px;
     padding: 13px 39px;
-  }
-
-  .products__image {
-    left: 44px;
   }
 }
