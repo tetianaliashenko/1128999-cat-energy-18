@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico"/>
   <script>document.createElement("picture");</script>
   <script src="js/picturefill.js" async></script>
 </head>
@@ -131,6 +132,9 @@
           </div>
           <div class="example__image-wrapper example__image-wrapper--after">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="example__image example__image--after" src="img/after-mobile@1x.png"
@@ -151,6 +155,9 @@
         <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
@@ -197,6 +204,8 @@
   </footer>
 
   <script src="js/main-nav.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
 </body>
 
 </html>
