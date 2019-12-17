@@ -7,9 +7,6 @@
 }
 
 .copyright__link {
-  display: inline-block;
-  vertical-align: center;
-
   .font-apply(@font-family: "Arial");
   font-size: 16px;
   line-height: 16px;
@@ -22,9 +19,11 @@
 }
 
 .copyright__logo {
-  &:hover svg {
-    stroke: @leaf;
-    fill: @leaf;
+  &:hover,
+  &:focus {
+    .copyright__image {
+      fill: @leaf;
+    }
   }
 
   &:active {

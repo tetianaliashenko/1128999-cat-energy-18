@@ -10,6 +10,7 @@
 
 .social__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -19,7 +20,7 @@
 }
 
 .social__link {
-  display: inline-block;
+  display: flex;
   width: 22px;
   height: 22px;
 
@@ -27,40 +28,33 @@
     opacity: 0.3;
   }
 
-  &--vkontakte {
-    background-image: url("../img/icon-vk.svg");
-    background-size: 22px 12px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &:hover,
-    &:focus {
-      background-image: url("../img/icon-vk-green.svg");
+  &:hover,
+  &:focus {
+    .social__image {
+      fill: @leaf;
     }
+  }
+}
+
+.social__image {
+  margin: 0 auto;
+
+  fill: @brownish-grey;
+
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
   }
 
   &--instagram {
-    background-image: url("../img/icon-insta.svg");
-    background-size: 17px 17px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &:hover,
-    &:focus {
-      background-image: url("../img/icon-insta-green.svg");
-    }
+    width: 17px;
+    height: 17px;
   }
 
   &--facebook {
-    background-image: url("../img/icon-fb.svg");
-    background-size: 10px 19px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    &:hover,
-    &:focus {
-      background-image: url("../img/icon-fb-green.svg");
-    }
+    width: 10px;
+    height: 19px;
   }
 }
 
@@ -78,17 +72,22 @@
   .social__link {
     width: 30px;
     height: 30px;
+  }
 
+  .social__image {
     &--vkontakte {
-      background-size: 30px 16px;
+      width: 30px;
+      height: 16px;
     }
 
     &--instagram {
-      background-size: 23px 23px;
+      width: 23px;
+      height: 23px;
     }
 
     &--facebook {
-      background-size: 14px 28px;
+      width: 14px;
+      height: 28px;
     }
   }
 }
