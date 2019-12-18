@@ -94,9 +94,9 @@ gulp.task("html", function () {
 
 gulp.task("compres", function () {
   return pipeline(
-    gulp.src("source/*.js"),
+    gulp.src("source/js/*.js"),
     uglify(),
-    gulp.dest("build")
+    gulp.dest("build/js")
   );
 });
 
