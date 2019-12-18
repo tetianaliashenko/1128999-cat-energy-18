@@ -19,24 +19,8 @@
   .list-style();
 }
 
-.social__link {
-  display: flex;
-  width: 22px;
-  height: 22px;
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:hover,
-  &:focus {
-    .social__image {
-      fill: @leaf;
-    }
-  }
-}
-
 .social__image {
+  display: flex;
   margin: 0 auto;
 
   fill: @brownish-grey;
@@ -55,6 +39,24 @@
   &--facebook {
     width: 10px;
     height: 19px;
+  }
+}
+
+.social__link {
+  width: 22px;
+  height: 22px;
+
+  &:active {
+    .social__image {
+      opacity: 0.3;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .social__image {
+      fill: @leaf;
+    }
   }
 }
 
