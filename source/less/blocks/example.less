@@ -7,24 +7,18 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 28px 20px 0;
+  padding: 28px 20px 44px;
   background-color: @grey;
 }
 
 .example__title {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 
   .font-apply();
   font-size: 36px;
   line-height: 36px;
   color: @black;
-}
-
-.example__results-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .example__info {
@@ -39,13 +33,12 @@
 }
 
 .example__statistic {
-  width: auto;
+  width: 280px;
   margin-bottom: 17px;
 }
 
 .example__costs {
   margin: 0 auto;
-  margin-bottom: 44px;
 
   .font-apply(@text-align: center);
   font-size: 14px;
@@ -58,24 +51,21 @@
 .example__visual {
   position: relative;
   width: 320px;
-  min-height: 320px;
-  padding-top: 261px;
+  padding: 261px 0 38px;
+
+  background-color: @grey;
 }
 
 .example__image {
-  &--before {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    z-index: 0;
-  }
+  width: 320px;
+  height: 240px;
 
+  &--before,
   &--after {
     display: none;
     position: absolute;
     top: 0;
-    left: 5px;
+    left: 0;
     z-index: 0;
   }
 }
@@ -164,7 +154,7 @@
   }
 
   .example__wrapper {
-    padding: 51px 0 0;
+    padding: 51px 30px 255px;
 
     background-color: @white;
   }
@@ -177,10 +167,6 @@
     line-height: 60px;
   }
 
-  .example__results-wrapper {
-    padding: 0 30px 255px;
-  }
-
   .example__info {
     width: 675px;
     margin-bottom: 56px;
@@ -190,13 +176,14 @@
   }
 
   .example__statistic {
+    width: 366px;
     margin-bottom: 0;
+    margin-right: auto;
   }
 
   .example__costs {
     width: 174px;
     margin: 0;
-    margin-left: auto;
     padding-top: 13px;
 
     .font-apply(@text-align: right);
@@ -341,17 +328,23 @@
 
 @media (min-width: @desktop-width) {
   .example {
+    display: flex;
+    flex-wrap: wrap;
     width: @desktop-width;
   }
 
   .example__wrapper {
-    padding: 65px 0 0;
+    width: 650px;
+    height: 462px;
+    padding: 76px 0 73px 110px;
+
+    background-color: @grey;
   }
 
   .example__title {
     width: 100%;
-    margin-bottom: 66px;
-    padding-left: 110px;
+    margin-top: -195px;
+    padding: 0;
   }
 
   .example__results-wrapper {

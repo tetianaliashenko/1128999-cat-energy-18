@@ -16,8 +16,8 @@
   <header class="page-header page-header--background">
     <a class="page-header__logo logo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="203" height="60">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="59">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»">
       </picture>
     </a>
@@ -96,61 +96,59 @@
     <section class="example">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
-        <div class="example__results-wrapper">
-          <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-            часов в день.</p>
-          <div class="example__statistic statistic">
-            <p class="statistic__item">
-              <span class="statistic__amount">5 кг</span>
-              <span class="statistic__action">снижение веса</span>
-            </p>
-            <p class="statistic__item">
-              <span class="statistic__amount">60 дней</span>
-              <span class="statistic__action">затрачено времени</span>
-            </p>
-          </div>
-          <p class="example__costs">Затраты на питание: <span>15 000 руб.</span></p>
+        <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов в день.</p>
+        <div class="example__statistic statistic">
+          <p class="statistic__item">
+            <span class="statistic__amount">5 кг</span>
+            <span class="statistic__action">снижение веса</span>
+          </p>
+          <p class="statistic__item">
+            <span class="statistic__amount">60 дней</span>
+            <span class="statistic__action">затрачено времени</span>
+          </p>
         </div>
-        <div class="example__visual">
-          <input class="visually-hidden example__radio example__radio--previous" type="radio" id="previous"
-            name="visual" checked>
-          <input class="visually-hidden example__radio example__radio--current" type="radio" id="current" name="visual">
-          <div class="example__toggles">
-            <label class="example__toggle example__toggle--left" for="previous">Было</label>
-            <div class="example__scale">
-              <div class="example__range">
-                <div class="example__point"></div>
-              </div>
+        <p class="example__costs">Затраты на питание: <span>15 000 руб.</span></p>
+      </div>
+      <div class="example__visual">
+        <input class="visually-hidden example__radio example__radio--previous" type="radio" id="previous" name="visual"
+          checked>
+        <input class="visually-hidden example__radio example__radio--current" type="radio" id="current" name="visual">
+        <div class="example__toggles">
+          <label class="example__toggle example__toggle--left" for="previous">Было</label>
+          <div class="example__scale">
+            <div class="example__range">
+              <div class="example__point"></div>
             </div>
-            <label class="example__toggle example__toggle--right" for="current">Стало</label>
           </div>
-          <div class="example__image-wrapper example__image-wrapper--before">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-              <img class="example__image example__image--before" src="img/before-mobile@1x.png"
-                srcset="img/before-mobile@2x.png 2x" width="320" height="232" alt="Кот Борис раньше">
-            </picture>
-          </div>
-          <div class="example__image-wrapper example__image-wrapper--after">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-              <img class="example__image example__image--after" src="img/after-mobile@1x.png"
-                srcset="img/after-mobile@2x.png 2x" width="320" height="232" alt="Кот Борис сейчас">
-            </picture>
-          </div>
+          <label class="example__toggle example__toggle--right" for="current">Стало</label>
+        </div>
+        <div class="example__image-wrapper example__image-wrapper--before">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example__image example__image--before" src="img/before-mobile@1x.png"
+              srcset="img/before-mobile@2x.png 2x" alt="Кот Борис раньше">
+          </picture>
+        </div>
+        <div class="example__image-wrapper example__image-wrapper--after">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="example__image example__image--after" src="img/after-mobile@1x.png"
+              srcset="img/after-mobile@2x.png 2x" alt="Кот Борис сейчас">
+          </picture>
         </div>
       </div>
     </section>
