@@ -2,10 +2,12 @@
   .list-style();
 
   width: 320px;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .additional-products__item {
+  display: flex;
+  flex-wrap: wrap;
   width: 280px;
   padding: 12px 0 16px 0;
 
@@ -47,9 +49,7 @@
 .additional-products__button {
   width: 280px;
   height: 40px;
-  padding: 13px 110px;
-  display: inline-block;
-  vertical-align: center;
+  padding: 12px 110px;
 }
 
 @media (min-width: @tablet-width) {
@@ -59,8 +59,6 @@
   }
 
   .additional-products__item {
-    display: flex;
-    flex-wrap: wrap;
     width: 708px;
     padding: 25px 37px;
 

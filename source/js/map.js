@@ -118,4 +118,4 @@ function changeCenter() {
 }
 
 initMap();
-window.addEventListener('resize', debounce(changeMarker, changeCenter, 100));
+window.addEventListener('resize', debounce(changeMarker, 100));
