@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  padding: 0 20px 21px;
+  padding: 0 20px 22px;
 
   border: 1px solid @products-grey;
 
@@ -35,7 +35,7 @@
 .products__title {
   width: 75px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
   padding-top: 23px;
 
   .font-apply();
@@ -47,7 +47,7 @@
 
   &--all {
     width: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
     padding-top: 0;
 
     .font-apply(@text-align: center);
@@ -81,12 +81,10 @@
 }
 
 .products__characteristic {
-  width: 40px;
-  padding-right: 55px;
+  padding-right: 50px;
 }
 
 .products__value {
-  width: 40px;
   text-align: right;
 }
 
@@ -116,7 +114,7 @@
     justify-content: center;
     position: relative;
     width: 324px;
-    margin-bottom: 140px;
+    margin-bottom: 138px;
     padding: 165px 37px 40px 39px;
 
     background-color: @grey;
@@ -131,7 +129,7 @@
     }
 
     &--all {
-      padding: 166px 37px 40px;
+      padding: 165px 37px 41px;
 
       background-color: @white;
       border: 1px solid @products-grey;
@@ -147,8 +145,8 @@
   }
 
   .products__title {
-    width: 126px;
-    margin-bottom: 28px;
+    width: 130px;
+    margin-bottom: 21px;
     padding-top: 0;
 
     .font-apply(@text-align: center);
@@ -156,7 +154,7 @@
 
     &--all {
       width: 135px;
-      margin-bottom: 28px;
+      margin-bottom: 23px;
     }
   }
 
@@ -166,17 +164,18 @@
     margin-bottom: 33px;
 
     font-size: 16px;
+    line-height: 20px;
 
     border-collapse: collapse;
 
     &--all {
       width: 170px;
-      margin-bottom: 85px;
+      margin-bottom: 82px;
     }
   }
 
   .products__characteristic {
-    padding: 5px 140px 5px 0;
+    padding: 5px 144px 5px 0;
 
     border-bottom: 1px solid @pinkish-grey;
   }
@@ -190,7 +189,7 @@
   .products__image {
     position: absolute;
     left: 0;
-    bottom: 305px;
+    bottom: 308px;
 
     width: auto;
     height: 172px;
@@ -202,15 +201,14 @@
 
   .products__button {
     width: 249px;
-    padding: 13px 75px;
+    padding: 12px 75px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .products__item {
-
     width: 245px;
-    margin-bottom: 142px;
+    margin-bottom: 140px;
 
     &:nth-last-of-type(3) {
       margin-bottom: 0;
@@ -237,6 +235,6 @@
 
   .products__button {
     width: 169px;
-    padding: 13px 39px;
+    padding: 11px 39px;
   }
 }

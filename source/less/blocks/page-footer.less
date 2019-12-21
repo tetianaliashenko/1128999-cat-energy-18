@@ -3,13 +3,16 @@
 }
 
 .page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .page-footer__logo {
-  display: inline-block;
   width: 280px;
   padding: 34px 77px 31px;
 }
@@ -20,16 +23,14 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: @tablet-width;
-    padding: 62px 30px;
+    padding: 55px 30px;
   }
 
   .page-footer__logo {
     width: 128px;
     padding: 0;
+    margin-right: 18px;
   }
 
   .page-footer__social {
@@ -40,6 +41,6 @@
 @media (min-width: @desktop-width) {
   .page-footer__wrapper {
     width: @desktop-width;
-    padding: 60px 110px;
+    padding: 56px 110px;
   }
 }
