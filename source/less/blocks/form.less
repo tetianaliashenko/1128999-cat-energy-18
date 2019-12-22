@@ -91,6 +91,10 @@
   padding: 0 25px 0 20px;
 
   background-color: @white;
+
+  &--width {
+    width: 226px;
+  }
 }
 
 .form__label {
@@ -152,6 +156,7 @@
 
 .form__input {
   flex-grow: 1;
+  min-height: 45px;
   margin-left: 13px;
   padding: 13px 12px;
 
@@ -173,8 +178,7 @@
   }
 
   &:focus {
-    border: 2px solid @greyish-brown;
-    outline: none;
+    outline: 2px solid @greyish-brown;
 
     + .form__label--email::after {
       background-image: url("../img/icon-mail-green.svg");
@@ -227,8 +231,7 @@
   resize: none;
 
   &:focus {
-    border: 2px solid @greyish-brown;
-    outline: none;
+    outline: 2px solid @greyish-brown;
   }
 }
 
@@ -385,6 +388,10 @@
 
   .form__title-text {
     padding: 0 45px;
+
+    &--width {
+      width: auto;
+    }
   }
 
   .form__label {
@@ -415,8 +422,9 @@
   }
 
   .form__input {
+    min-height: 52px;
     margin-left: 16px;
-    padding: 15px 20px;
+    padding: 10px 20px;
 
     font-size: 20px;
     line-height: 20px;

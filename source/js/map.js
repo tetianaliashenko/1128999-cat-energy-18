@@ -32,7 +32,7 @@ function debounce(func, wait, immediate) {
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: changeCenter(),
+    center: isDesktop ? coordinatesDesktop : coordinates,
     zoom: 17
   });
 
@@ -119,3 +119,4 @@ function changeCenter() {
 
 initMap();
 window.addEventListener('resize', debounce(changeMarker, 100));
+window.addEventListener('resize', debounce(changeCenter, 100));
