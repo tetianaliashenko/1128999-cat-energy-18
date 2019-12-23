@@ -1,11 +1,19 @@
 .page-header {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   width: 320px;
   margin: 0 auto;
+
+  border-bottom: 1px solid @products-grey;
+
+  &--background {
+    border-bottom: none;
+  }
 }
 
 .page-header__logo {
-  display: inline-block;
   width: 191px;
   height: 39px;
   margin: 12px 0 15px 20px;
@@ -13,11 +21,10 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
     width: @tablet-width;
     padding: 24px 30px 0;
+
+    border: none;
   }
 
   .page-header__logo {

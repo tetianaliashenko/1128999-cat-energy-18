@@ -18,7 +18,7 @@
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" width="191" height="39" alt="Логотип «Кэт энерджи»">
+        <img src="img/logo-mobile.svg" alt="Логотип «Кэт энерджи»">
       </picture>
     </a>
 
@@ -69,7 +69,7 @@
       </div>
 
       <fieldset class="form__fieldset">
-        <legend class="form__title"><span class="form__title-text">Контактные данные (владельца
+        <legend class="form__title"><span class="form__title-text form__title-text--width">Контактные данные (владельца
             кота)</span></legend>
         <div class="form__wrapper">
           <div class="form__text">
@@ -88,7 +88,7 @@
       <fieldset class="form__fieldset">
         <legend class="form__title"><span class="form__title-text">Комментарий</span></legend>
         <div class="form__wrapper">
-          <textarea class="form__textarea" rows="7" name="comments"
+          <textarea class="form__textarea" name="comments"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
@@ -117,7 +117,7 @@
     <section class="page-footer__contacts contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </div>
       <div id="map" class="contacts__map"></div>
     </section>
@@ -131,7 +131,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Страница «Кэт энерджи» в Вконтакте">
-              <svg xmlns="http://w3.org/2000/svg" class="social__image social__image--vkontakte" width="22" height="12">
+              <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--vkontakte" width="22" height="12">
                 <use xlink:href="img/sprite.svg#sprite-icon-vk"></use>
               </svg>
             </a>
@@ -139,13 +139,13 @@
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Страница «Кэт энерджи» в Инстаграме">
               <svg class="social__image social__image--instagram" width="17" height="17">
-                <use xmlns="http://w3.org/2000/svg" xlink:href="img/sprite.svg#sprite-icon-insta"></use>
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Страница «Кэт энерджи» в Фейсбуке">
-              <svg xmlns="http://w3.org/2000/svg" class="social__image social__image--facebook" width="10" height="19">
+              <svg xmlns="http://www.w3.org/2000/svg" class="social__image social__image--facebook" width="10" height="19">
                 <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
@@ -157,7 +157,7 @@
         <h2 class="visually-hidden">Разработано:</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://w3.org/2000/svg" class="copyright__image" width="27" height="34">
+          <svg xmlns="http://www.w3.org/2000/svg" class="copyright__image" width="27" height="34">
             <use xlink:href="img/sprite.svg#sprite-htmlacademy"></use>
           </svg>
         </a>
@@ -170,7 +170,6 @@
   <script>svg4everybody(); // run it now or whenever you are ready</script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX87w_NT_SdDvWxH0yYq9TLYeiLi5zxIk"></script>
   <script src="js/map.js"></script>
-  <script>initMap()</script>
 </body>
 
 </html>

@@ -3,10 +3,13 @@
   align-items: center;
   justify-content: space-between;
 
+  width: 100%;
   padding: 22px 0 28px;
 }
 
 .copyright__link {
+  margin-right: 138px;
+
   .font-apply(@font-family: "Arial");
   font-size: 16px;
   line-height: 16px;
@@ -31,8 +34,13 @@
   }
 }
 
+.copyright__image {
+  fill: @brownish-grey;
+}
+
 @media (min-width: @tablet-width) {
   .copyright {
+    width: auto;
     padding: 0;
   }
 
