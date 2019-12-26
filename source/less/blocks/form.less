@@ -1,17 +1,12 @@
 .form {
-  width: 100%;
-}
-
-.form__big-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
   padding-bottom: 31px;
 }
 
 .form__info {
-  width: 100%;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 39px;
   padding: 0 20px;
 
@@ -24,8 +19,8 @@
 }
 
 .form__fieldset {
-  width: 320px;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 28px;
   padding: 0;
 
@@ -48,6 +43,8 @@
 }
 
 .form__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 
   &--no-padding {
@@ -57,13 +54,26 @@
       padding: 0 20px;
     }
   }
+
+  &--last {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__wrapper-additional {
+  width: 320px;
+  margin: 0 auto;
   padding: 5px 20px;
 }
 
+.form__title-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .form__title {
+  display: flex;
   position: relative;
   width: 100%;
   margin-bottom: 31px;
@@ -247,7 +257,7 @@
 }
 
 .form__required {
-  width: auto;
+  width: 320px;
   margin: 0 auto;
   padding: 23px 20px 0;
 
@@ -335,12 +345,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__big-wrapper {
-    width: @tablet-width;
+  .form {
     padding: 53px 0 72px;
   }
 
   .form__info {
+    width: @tablet-width;
     margin-bottom: 69px;
     padding: 0 70px;
 
@@ -349,7 +359,6 @@
   }
 
   .form__fieldset {
-    width: 100%;
     margin-bottom: 60px;
     padding: 0;
 
@@ -390,8 +399,12 @@
     }
   }
 
+  .form__title-wrapper {
+    width: @tablet-width;
+  }
+
   .form__title-text {
-    padding: 0 45px;
+    padding: 0 43px;
 
     &--width {
       width: auto;
@@ -451,6 +464,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: @tablet-width;
     padding: 0 70px;
 
     .form__label {
@@ -464,13 +478,14 @@
 
   .form__button {
     width: 283px;
-    margin: 0 61px 0 70px;
+    margin: 0 70px 0 0;
     padding: 15px 63px;
 
     font-size: 20px;
   }
 
   .form__required {
+    width: auto;
     margin: 0;
     padding: 17px 0 0;
 
@@ -496,18 +511,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__big-wrapper {
-    width: @desktop-width;
+  .form {
     padding: 53px 0 82px;
   }
 
   .form__info {
+    width: @desktop-width;
     padding: 0 40px;
   }
 
   .form__fieldset {
-    width: 100%;
-
     &--border {
       width: 570px;
       margin-bottom: 68px;
@@ -525,14 +538,24 @@
     padding: 0 40px;
 
     &--no-padding {
+      padding: 0 10px;
+
       .form__fieldset {
         width: 570px;
       }
+    }
+
+    &--last {
+      justify-content: start;
     }
   }
 
   .form__input {
     margin-left: 17px;
+  }
+
+  .form__title-wrapper {
+    width: @desktop-width;
   }
 
   .form__title {
@@ -585,7 +608,7 @@
 
   .form__button {
     width: 568px;
-    margin: 0 82px 0 40px;
+    margin: 0 82px 0 0;
     padding: 15px 206px;
   }
 }
