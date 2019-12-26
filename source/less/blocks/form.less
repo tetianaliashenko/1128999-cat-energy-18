@@ -1,4 +1,8 @@
 .form {
+  width: 100%;
+}
+
+.form__big-wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
@@ -331,7 +335,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form {
+  .form__big-wrapper {
     width: @tablet-width;
     padding: 53px 0 72px;
   }
@@ -492,13 +496,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form {
+  .form__big-wrapper {
     width: @desktop-width;
     padding: 53px 0 82px;
   }
 
   .form__info {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .form__fieldset {
@@ -518,7 +522,7 @@
     display: flex;
     justify-content: space-between;
     width: @desktop-width;
-    padding: 0 110px;
+    padding: 0 40px;
 
     &--no-padding {
       .form__fieldset {
@@ -533,7 +537,7 @@
 
   .form__title {
     margin-bottom: 73px;
-    padding-left: 65px;
+    padding-left: 0;
   }
 
   .form__label {
@@ -570,7 +574,8 @@
   }
 
   .form__wrapper-additional {
-    padding: 0 110px;
+    width: @desktop-width;
+    padding: 0 40px;
 
     .form__label {
       width: 247px;
@@ -580,8 +585,7 @@
 
   .form__button {
     width: 568px;
-    margin-right: 82px;
-    margin-left: 110px;
+    margin: 0 82px 0 40px;
     padding: 15px 206px;
   }
 }

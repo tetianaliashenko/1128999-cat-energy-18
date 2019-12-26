@@ -1,4 +1,11 @@
 .page-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-main__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   width: 320px;
   margin: 0 auto;
 }
@@ -15,8 +22,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main {
-    width: @tablet-width;
+  .page-main__wrapper {
+    min-width: @tablet-width;
   }
 
   .page-main__heading {
@@ -28,11 +35,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    width: @desktop-width;
+  .page-main__wrapper {
+    min-width: @desktop-width;
   }
 
   .page-main__heading {
-    padding: 75px 110px 0;
+    padding: 75px 40px 0;
   }
 }

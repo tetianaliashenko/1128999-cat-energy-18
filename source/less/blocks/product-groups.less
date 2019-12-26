@@ -121,6 +121,8 @@
 
   &:hover::after,
   &:focus::after {
+    top: 30%;
+
     background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
@@ -203,7 +205,6 @@
     line-height: 20px;
 
     &::after {
-      top: 35%;
       right: 0;
     }
   }
@@ -211,8 +212,8 @@
 
 @media (min-width: @desktop-width) {
   .product-groups {
-    width: 1440px;
-    padding: 80px 110px 0;
+    width: @desktop-width;
+    padding: 80px 40px 0;
   }
 
   .product-groups__list {

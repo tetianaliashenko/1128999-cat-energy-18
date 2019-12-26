@@ -1,5 +1,4 @@
 .catalog-additional {
-  width: 320px;
   padding: 31px 0 33px;
 }
 
@@ -47,12 +46,13 @@
 
 @media (min-width: @tablet-width) {
   .catalog-additional {
-    width: @tablet-width;
+    width: 100%;
     padding: 0 0 76px;
   }
 
   .catalog-additional__wrapper {
     width: @tablet-width;
+    margin: 0 auto;
     padding: 0 30px;
   }
 
@@ -79,7 +79,6 @@
 
 @media (min-width: @desktop-width) {
   .catalog-additional {
-    width: @desktop-width;
     padding: 0 0 86px;
   }
 
@@ -88,11 +87,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: @desktop-width;
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .catalog-additional__title-text {
-    margin-left: 70px;
+    margin-left: 0;
   }
 
   .catalog-additional__list {

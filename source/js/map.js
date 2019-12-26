@@ -1,7 +1,7 @@
 var coordinates = { lat: 59.938729, lng: 30.323043 };
 var coordinatesDesktop = { lat: 59.938757, lng: 30.319367 };
 var tabletWidth = 768;
-var desktopWidth = 1440;
+var desktopWidth = 1300;
 var isDesktop = window.innerWidth >= desktopWidth;
 var isMobile = window.innerWidth < tabletWidth;
 var map;
@@ -110,7 +110,7 @@ function setMobileCenter() {
 }
 
 function changeCenter() {
-  if (window.matchMedia('(min-width: 1440px)').matches) {
+  if (window.matchMedia('(min-width: 1300px)').matches) {
     setDesktopCenter();
   }
 
