@@ -41,21 +41,9 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    min-width: @desktop-width;
+    width: @desktop-width;
+    min-height: 696px;
     padding: 53px 40px 0;
-
-    &--background {
-      min-height: 696px;
-
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-size: 720px 696px;
-      background-position: 650px 0;
-
-      @media (min-resolution: @retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
-    }
   }
 
   .page-header__logo {
